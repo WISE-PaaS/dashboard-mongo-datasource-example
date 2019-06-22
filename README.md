@@ -9,8 +9,8 @@ Credits go to the project at https://github.com/JamesOsgood/mongodb-grafana
 
 * **Grafana** > 3.x.x
 * **MongoDB** > 3.4.x
-* **WISE-PaaS/EnSaaS account
-* **WISE-PaaS/Dashboard > 1.3.x
+* **WISE-PaaS/EnSaaS account**
+* **WISE-PaaS/Dashboard** > 1.3.x
 
 ## Installation
 
@@ -26,18 +26,18 @@ Credits go to the project at https://github.com/JamesOsgood/mongodb-grafana
 
 First, we need to create a credential key for our MongoDB service instance on WISE-PaaS : 
 
-<img src="src/img/grafana_mongo_demo_3.png" alt="DB service credential key" style="width: 500px;"/>
+<img src="src/img/grafana_mongo_demo_3.PNG" alt="DB service credential key" style="width: 500px;"/>
 
 Create a new data source of type MongoDB as shown below. Please use the right credential information and proxy server URL for your environment :
 
 You may find the URL of your proxy server on the management portal, inside the application information panel.
 
-<img src="src/img/grafana_mongo_demo_4.png" alt="Find proxy server URL" style="width: 500px;"/>
+<img src="src/img/grafana_mongo_demo_4.PNG" alt="Find proxy server URL" style="width: 500px;"/>
 
 * **MongoDB URL** - `mongodb://<username>:<password>@40.83.78.152:27017/<database_name>`
 * **Example Proxy Server URL** - `http://datasource-mongodb-proxy.wise-paas.io/`
 
-<img src="src/img/grafana_mongo_demo_0.png" alt="Sample Data Source" style="width: 500px;"/>
+<img src="src/img/grafana_mongo_demo_0.PNG" alt="Sample Data Source" style="width: 500px;"/>
 
 Then save the data source
 
@@ -45,15 +45,15 @@ Then save the data source
 
 Import the dashboard in `examples\mongodb_demo.json`
 
-<img src="src/img/grafana_mongo_demo_1.png" alt="Sample Dashboard" style="width: 800px;"/>
+<img src="src/img/grafana_mongo_demo_1.PNG" alt="Sample Dashboard" style="width: 800px;"/>
 
 This should show a graph of data values from a dummy data set, which has the document format like below : 
 
-<img src="src/img/grafana_mongo_demo_2.png" alt="Dummy data format" style="width: 800px;"/>
+<img src="src/img/grafana_mongo_demo_2.PNG" alt="Dummy data format" style="width: 800px;"/>
 
 Clicking on the title of the graph allows you to see the aggregation query being run against the data source
 
-<img src="src/img/grafana_mongo_demo_5.png" alt="Sample Query" style="width: 800px;"/>
+<img src="src/img/grafana_mongo_demo_5.PNG" alt="Sample Query" style="width: 800px;"/>
 
 The query here is
 
@@ -75,7 +75,7 @@ db.dummy.aggregate([
 
 #### Example 2 - Using a Tabel Panel
 
-<img src="src/img/grafana_mongo_demo_6.png" alt="Table Panel" style="width: 800px;"/>
+<img src="src/img/grafana_mongo_demo_6.PNG" alt="Table Panel" style="width: 800px;"/>
 
 Table panels are now supported with queries of the form
 
