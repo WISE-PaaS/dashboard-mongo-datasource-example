@@ -20,7 +20,7 @@ Credits go to the project at https://github.com/JamesOsgood/mongodb-grafana
 
 ### Install and Start the MongoDB proxy server
 
-* Simply do `cf push` at the root directory of the project where the `manigest.yml` file is located at.
+* Simply do `cf push` at the root directory of the project where the `manifest.yml` file is located at.
 
 ## Examples
 
