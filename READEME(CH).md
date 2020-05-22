@@ -24,8 +24,9 @@
 #### 1. 檢查 yaml 檔案
 
 - 將 docker 帳號更換成自己的帳號
+
   <img src="src/img/sample_dockeraccount.png" alt="sample_secret" style="width: 500px;"/>
--  更換 secret
+- 更換 secret
   <img src="src/img/sample_secret.png" alt="sample_secret" style="width: 500px;"/>
 
 #### 2. 打包到 Dockerhub 上
