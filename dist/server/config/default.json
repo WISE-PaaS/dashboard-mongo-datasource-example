@@ -1,10 +1,8 @@
 {
-    "server": 
-    {
-      "port": 8080,
-      "logRequests": true,
-      "logQueries": false,
-      "logTimings": true
-    }
+  "server": {
+    "port": 3000,
+    "logRequests": true,
+    "logQueries": false,
+    "logTimings": true
+  }
 }
-  
