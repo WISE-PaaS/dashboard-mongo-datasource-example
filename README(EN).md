@@ -34,7 +34,9 @@ Credits go to the project at https://github.com/JamesOsgood/mongodb-grafana
 #### 2. Package to Dockerhub
 
 - `docker build -t {docker account/mongodb:api} .`
+
   -t : Specify the name of the target image to be created
+  
   "." : Location of the directory containing the Dockerfile
 - `docker push {docker account/mongodb:api}`
 
