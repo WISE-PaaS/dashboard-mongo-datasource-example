@@ -89,8 +89,7 @@ Table panels are now supported with queries of the form
 ```javascript
 db.default.aggregate([
   { $match: { ts: { $gte: '$from', $lt: '$to' } } },
-  { $group: { _id: '$name', total: { $sum: '$value' }, ts: { $max: '$ts' } } },
-  { $project: { name: '$_id', value: '$total', ts: 1, _id: 0 } },
+  { $group: { _id: '$machine', total: { $avg: '$value' }, ts: { $max: '$ts' } } }
 ]);
 ```
 
