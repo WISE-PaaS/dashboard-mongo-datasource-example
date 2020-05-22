@@ -85,4 +85,5 @@ db.default.aggregate([
 ```
 
 數據來源是 default 數據，其數據內容格式如下：
+
 <img src="src/img/sample_tobo3t_datasource_format.png" alt="sample_tobo3t_datasource_format" style="width: 500px;"/>
