@@ -59,7 +59,7 @@ Then save the data source
 
 This should show a graph of data values from a dummy data set, which has the document format like below :
 
-<img src="src/img/sample_robo3t.png" alt="sample_robo3t" style="width: 500px;"/>
+<img src="src/img/sample_robo3T.png" alt="sample_robo3t" style="width: 500px;"/>
 
 Clicking on the title of the graph allows you to see the aggregation query being run against the data source
 
@@ -83,8 +83,7 @@ These documents are then converted into the [Grafana API](http://docs.grafana.or
 
 #### Example 2 - Using a Tabel Panel
 
-
-<img src="src/img/sample_table.PNG" alt="Table Panel" style="width: 800px;"/>
+<img src="src/img/sample_table.PNG" alt="sample_table" style="width: 800px;"/>
 
 Table panels are now supported with queries of the form
 
