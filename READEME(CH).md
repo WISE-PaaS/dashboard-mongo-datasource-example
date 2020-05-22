@@ -58,7 +58,7 @@ db.default.aggregate([{ $match: { ts: { $gte: '$from', $lt: '$to' } } }]);
 ```
 
 數據來源是 default 數據，其格式如下：
-<img src="src/img/sample_robo3t.png" alt="sample_robo3t" style="width: 500px;"/>
+<img src="src/img/sample_robo3T.png" alt="sample_robo3t" style="width: 500px;"/>
 
 API 要求返回具有以下字段的文檔
 
