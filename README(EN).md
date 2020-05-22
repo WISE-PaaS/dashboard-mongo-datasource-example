@@ -83,7 +83,6 @@ These documents are then converted into the [Grafana API](http://docs.grafana.or
 
 #### Example 2 - Using a Tabel Panel
 
-<img src="src/img/sample_table.PNG" alt="sample_table" style="width: 800px;"/>
 
 Table panels are now supported with queries of the form
 
