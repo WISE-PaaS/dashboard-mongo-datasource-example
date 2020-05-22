@@ -80,8 +80,7 @@ API 要求返回具有以下字段的文檔
 ```javascript
 db.default.aggregate([
   { $match: { ts: { $gte: '$from', $lt: '$to' } } },
-  { $group: { _id: '$name', total: { $sum: '$value' }, ts: { $max: '$ts' } } },
-  { $project: { name: '$_id', value: '$total', ts: 1, _id: 0 } },
+  { $group: { _id: '$machine', total: { $avg: '$value' }, ts: { $max: '$ts' } } }
 ]);
 ```
 
