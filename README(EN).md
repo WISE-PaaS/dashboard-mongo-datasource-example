@@ -24,8 +24,11 @@ Credits go to the project at https://github.com/JamesOsgood/mongodb-grafana
 #### 1. Check yaml file
 
 - Replace the docker account with your own account
+
   <img src="src/img/sample_dockeraccount.png" alt="sample_secret" style="width: 500px;"/>
--  Replace secret
+  
+- Replace secret
+
   <img src="src/img/sample_secret.png" alt="sample_secret" style="width: 500px;"/>
 
 #### 2. Package to Dockerhub
@@ -91,4 +94,5 @@ db.default.aggregate([
 ```
 
 This should show a graph of data values from a default data set, which has the document format like below :
+
 <img src="src/img/sample_tobo3t_datasource_format.png" alt="sample_tobo3t_datasource_format" style="width: 500px;"/>
