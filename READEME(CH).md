@@ -28,15 +28,21 @@
   <img src="src/img/sample_dockeraccount.png" alt="sample_secret" style="width: 500px;"/>
 - 更換 secret
   <img src="src/img/sample_secret.png" alt="sample_secret" style="width: 500px;"/>
+  
+#### 2. Check ingress file
+  
+- 更換為自己的 Space 名稱 
 
-#### 2. 打包到 Dockerhub 上
+  <img src="src/img/ingress_yaml_—_mongo-api-dashboard.png" alt="sample_secret" style="width: 500px;"/>
+
+#### 3. 打包到 Dockerhub 上
 
 - `docker build -t {docker account/mongodb:api} .`\
   -t : 指定要創建的目標鏡像名稱\
   "." : DockerFile 文件所在目錄，也可以指定 DockerFile 絕對路徑
 - `docker push {docker account/mongodb:api}`
 
-#### 3. Apply 到 WISE-PaaS 雲端
+#### 4. Apply 到 WISE-PaaS 雲端
 
 - `kubectl apply -f k8s/`
 
