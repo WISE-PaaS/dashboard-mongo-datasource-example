@@ -1,4 +1,4 @@
-# MongoDB API 使用範例
+# MongoDB Datasource for WISE-PaaS/Dashboard 使用範例
 
 ## 特色
 
