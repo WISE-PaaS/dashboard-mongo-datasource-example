@@ -30,6 +30,12 @@ Credits go to the project at https://github.com/JamesOsgood/mongodb-grafana
 - Replace secret
 
   <img src="src/img/sample_secret.png" alt="sample_secret" style="width: 500px;"/>
+  
+#### 2. Check ingress file
+  
+- Replace space name with your own space
+
+  <img src="src/img/sample_secret.png" alt="sample_secret" style="width: 500px;"/>
 
 #### 2. Package to Dockerhub
 
