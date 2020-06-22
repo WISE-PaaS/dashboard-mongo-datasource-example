@@ -35,9 +35,9 @@ Credits go to the project at https://github.com/JamesOsgood/mongodb-grafana
   
 - Replace space name with your own space
 
-  <img src="src/img/sample_secret.png" alt="sample_secret" style="width: 500px;"/>
+  <img src="src/img/ingress_yaml_—_mongo-api-dashboard.png" alt="sample_secret" style="width: 500px;"/>
 
-#### 2. Package to Dockerhub
+#### 3. Package to Dockerhub
 
 - `docker build -t {docker account/mongodb:api} .`
 
@@ -46,7 +46,7 @@ Credits go to the project at https://github.com/JamesOsgood/mongodb-grafana
   "." : Location of the directory containing the Dockerfile
 - `docker push {docker account/mongodb:api}`
 
-#### 3. Apply to WISE-PaaS
+#### 4. Apply to WISE-PaaS
 
 - `kubectl apply -f k8s/`
 
