@@ -60,10 +60,17 @@ Credits go to the project at https://github.com/JamesOsgood/mongodb-grafana
 
 ## Add data source (MongoDB) in Dashboard
 
-- View secret 
+- View MongoDB-API Domain url in ingress and copy that in HTTP
+
 <img src="src/img/view secret.png" alt="sample_datasource" style="width: 500px;"/>
 
-<img src="src/img/sample_datasource.png" alt="sample_datasource" style="width: 500px;"/>
+<img src="src/img/mongodb-api-url.png" alt="sample_datasource" style="width: 500px;"/>
+
+- View MongoDB secret in Portal-Service and copy that in MongoDB details
+
+<img src="src/img/credentials.png" alt="sample_datasource" style="width: 500px;"/>
+
+<img src="src/img/data source.png" alt="sample_datasource" style="width: 500px;"/>
 
 Then save the data source
 
