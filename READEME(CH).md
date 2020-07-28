@@ -21,7 +21,15 @@
 
 ### 安裝並啟動 MongoDB 代理服務器
 
-#### 1. 檢查 yaml 檔案
+#### 1. 在 Portal-Service 創建 secret
+
+- 創建 Database 在 Cluster 當中
+
+  <img src="src/img/create secret.png" alt="sample_secret" style="width: 500px;"/>
+  
+  <img src="src/img/mongodb-secret.png" alt="sample_secret" style="width: 500px;"/>
+
+#### 2. 檢查 yaml 檔案
 
 - 將 docker 帳號更換成自己的帳號
 
@@ -29,29 +37,36 @@
 - 更換 secret
   <img src="src/img/sample_secret.png" alt="sample_secret" style="width: 500px;"/>
   
-#### 2. Check ingress file
+#### 3. Check ingress file
   
 - 更換為自己的 Space 名稱 
 
   <img src="src/img/ingress_yaml_—_mongo-api-dashboard.png" alt="sample_secret" style="width: 500px;"/>
 
-#### 3. 打包到 Dockerhub 上
+#### 4. 打包到 Dockerhub 上
 
 - `docker build -t {docker account/mongodb:api} .`\
   -t : 指定要創建的目標鏡像名稱\
   "." : DockerFile 文件所在目錄，也可以指定 DockerFile 絕對路徑
 - `docker push {docker account/mongodb:api}`
 
-#### 4. Apply 到 WISE-PaaS 雲端
+#### 5. Apply 到 WISE-PaaS 雲端
 
 - `kubectl apply -f k8s/`
 
-## 範例
+## 添加數據源(MongoDB)在 Dashboard
 
-- **MongoDB URL** - `mongodb://77c6dc64-6732-47d0-890f-76f5c752fad2:LAQmPoBHkREPiHQu0N1bFVx7@10.0.9.101:27017/<database_name>`
-- **範例 Proxy Server URL** - `http://dashboard-mongodb-api-level1-eks004.sa.wise-paas.com`
+- 複製 Domain MongoDB API URL 到 HTTP 當中
 
-<img src="src/img/sample_datasource.png" alt="sample_datasource" style="width: 500px;"/>
+<img src="src/img/view secret.png" alt="sample_datasource" style="width: 500px;"/>
+
+<img src="src/img/mongodb-api-url.png" alt="sample_datasource" style="width: 500px;"/>
+
+- 複製 secret 當中的 credentials 到 MongoDB details 當中
+
+<img src="src/img/credentials.png" alt="sample_datasource" style="width: 500px;"/>
+
+<img src="src/img/data source.png" alt="sample_datasource" style="width: 500px;"/>
 
 然後保存數據源
 
