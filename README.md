@@ -25,9 +25,9 @@ Credits go to the project at https://github.com/JamesOsgood/mongodb-grafana
 
 - Create Database in Cluster
 
-  <img src="src/img/sample_dockeraccount.png" alt="sample_secret" style="width: 500px;"/>
+  <img src="src/img/mongodb-secret.png" alt="sample_secret" style="width: 500px;"/>
 
-#### 1. Check yaml file
+#### 2. Check yaml file
 
 - Replace the docker account with your own account
 
@@ -35,15 +35,15 @@ Credits go to the project at https://github.com/JamesOsgood/mongodb-grafana
   
 - Replace secret
 
-  <img src="src/img/sample_secret.png" alt="sample_secret" style="width: 500px;"/>
+  <img src="src/img/1__WISE-PaaS___Overview.png" alt="sample_secret" style="width: 500px;"/>
   
-#### 2. Check ingress file
+#### 3. Check ingress file
   
 - Replace space name with your own space
 
   <img src="src/img/ingress_yaml_—_mongo-api-dashboard.png" alt="sample_secret" style="width: 500px;"/>
 
-#### 3. Package to Dockerhub
+#### 4. Package to Dockerhub
 
 - `docker build -t {docker account/mongodb:api} .`
 
