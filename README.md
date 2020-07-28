@@ -21,6 +21,12 @@ Credits go to the project at https://github.com/JamesOsgood/mongodb-grafana
 
 ### Install and Start the MongoDB proxy server
 
+#### 1. Create secret in Portal-Service
+
+- Create Database in Cluster
+
+  <img src="src/img/sample_dockeraccount.png" alt="sample_secret" style="width: 500px;"/>
+
 #### 1. Check yaml file
 
 - Replace the docker account with your own account
