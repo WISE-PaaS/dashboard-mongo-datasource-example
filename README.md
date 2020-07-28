@@ -25,6 +25,8 @@ Credits go to the project at https://github.com/JamesOsgood/mongodb-grafana
 
 - Create Database in Cluster
 
+  <img src="src/img/create secret.png" alt="sample_secret" style="width: 500px;"/>
+  
   <img src="src/img/mongodb-secret.png" alt="sample_secret" style="width: 500px;"/>
 
 #### 2. Check yaml file
@@ -52,14 +54,14 @@ Credits go to the project at https://github.com/JamesOsgood/mongodb-grafana
   "." : Location of the directory containing the Dockerfile
 - `docker push {docker account/mongodb:api}`
 
-#### 4. Apply to WISE-PaaS
+#### . Apply to WISE-PaaS
 
 - `kubectl apply -f k8s/`
 
-## Examples
+## Add data source (MongoDB) in Dashboard
 
-- **MongoDB URL** - `mongodb://77c6dc64-6732-47d0-890f-76f5c752fad2:LAQmPoBHkREPiHQu0N1bFVx7@10.0.9.101:27017/<database_name>`
-- **Example Proxy Server URL** - `http://dashboard-mongodb-api-level1-eks004.sa.wise-paas.com`
+- View secret 
+<img src="src/img/view secret.png" alt="sample_datasource" style="width: 500px;"/>
 
 <img src="src/img/sample_datasource.png" alt="sample_datasource" style="width: 500px;"/>
 
