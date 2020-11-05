@@ -6,6 +6,8 @@ Allows MongoDB to be used as a data source for Grafana by providing a proxy to c
 
 Credits go to the project at https://github.com/JamesOsgood/mongodb-grafana
 
+**The codes used in this example comes from an open source project, Advantech will not be responsible for any issues caused by the use of these codes.**
+
 ## Requirements
 
 - **Grafana** > 3.x.x
