@@ -6,6 +6,8 @@
 
 信賴的項目 <https://github.com/JamesOsgood/mongodb-grafana>
 
+**此範例中所使用的源碼來自於開源項目，研華不對使用此源碼造成的問題負任何責任。**
+
 ## 版本需求
 
 - **Grafana** > 3.x.x
